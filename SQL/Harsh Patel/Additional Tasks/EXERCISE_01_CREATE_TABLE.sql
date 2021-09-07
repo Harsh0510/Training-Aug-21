@@ -90,7 +90,7 @@ CREATE TABLE JobHistory
 	EndDate VARCHAR(10) NOT NULL,
 	JobID INT NOT NULL,
 	DepartmentID INT NOT NULL,
-	CONSTRAINT CHK_EndDate CHECK(EndDate LIKE  '--/--/----')
+	CONSTRAINT CHK_EndDate CHECK(EndDate LIKE  '__/__/____')
 )
 
 /*9. Write a SQL statement to create a table named jobs including columns job_id, job_title, min_salary 
