@@ -1,8 +1,6 @@
-CREATE DATABASE DB_Tasks
+CREATE DATABASE Exercise1
 
-USE DB_Tasks
-
-SELECT * FROM sys.tables
+USE Exercise1
 
 /*1. Write a SQL statement to create a simple table countries including columns country_id,country_name 
 and region_id. make sure that the column country_id will be unique and store an auto incremented value.*/
@@ -62,7 +60,7 @@ CREATE TABLE Jobs
 	Job_Title VARCHAR(20),
 	MinSalary Money,
 	MaxSalary Money,
-	CONSTRAINT PK_Jobs_JobID PRIMARY KEY(JobID),
+	CONSTRAINT PK_Jobs_JobID PRIMARY KEY(Job_ID ),
 	CONSTRAINT CHK_Jobs_MaxSalary CHECK(Maxsalary <= 25000)
 )
 
@@ -128,7 +126,11 @@ last_name, email, phone_number hire_date, job_id, salary, commission, manager_id
 and make sure that, the employee_id column does not contain any duplicate value at the time of insertion 
 and the foreign key columns combined by department_id and manager_id columns contain only those unique 
 combination values, which combinations are exists in the departments table.*/
-
+CREATE TABLE Departments
+(ManagerID INT NOT NULL,
+	DepartmentID INT NOT NULL
+	PRIMARY KEY(ManagerID,DepartmentID)
+)
 	CREATE TABLE Employees 
 ( 
     EmployeeID INT NOT NULL PRIMARY KEY, 
@@ -140,10 +142,10 @@ combination values, which combinations are exists in the departments table.*/
     JobID varchar(10) NOT NULL, 
     Salary decimal(8,2) DEFAULT NULL, 
     CommissionPCT decimal(2,2) DEFAULT NULL, 
-    ManagerID INT DEFAULT NULL, 
-    DepartmentID decimal(4,0) DEFAULT NULL, 
-   -FOREIGN KEY(DepartmentID,ManagerID) 
-    REFERENCES  Departments(DepartmentID,ManagerID)
+    ManagerID INT , 
+    DepartmentID INT, 
+	FOREIGN KEY(ManagerID,DepartmentID) 
+    REFERENCES  Departments(ManagerID,DepartmentID)
 );
 
 /*12. Write a SQL statement to create a table employees including columns employee_id, first_name, 
@@ -152,21 +154,19 @@ and make sure that, the employee_id column does not contain any duplicate value 
 and the foreign key column department_id, reference by the column department_id of departments table, 
 can contain only those values which are exists in the departments table and another foreign key column job_id, 
 referenced by the column job_id of jobs table, can contain only those values which are exists in the jobs table.*/
+CREATE TABLE Dep(DepartmentID INT PRIMARY KEY NOT NULL)
 
-CREATE TABLE Employees ( 
+CREATE TABLE Employees1 ( 
 EmployeeID INT NOT NULL PRIMARY KEY, 
 FirstName varchar(20) DEFAULT NULL, 
 LastName varchar(25) NOT NULL, 
 Email varchar(25) NOT NULL, 
 PhoneNumber varchar(20) DEFAULT NULL, 
 HireDate date NOT NULL, 
-JobID varchar(10) NOT NULL, 
+JobID INT NOT NULL CONSTRAINT JobID_Fk FOREIGN KEY REFERENCES Jobs(Job_ID), 
 Salary decimal(8,2) DEFAULT NULL, 
 CommissionPCT decimal(2,2) DEFAULT NULL, 
-ManagerID decimal(6,0) DEFAULT NULL, 
-DepartmentID decimal(4,0) DEFAULT NULL, 
-FOREIGN KEY(DepartmentID) 
-REFERENCES  Departments(DepartmentID),
-FOREIGN KEY(JobID) 
-REFERENCES  Jobs(JobID)
+ManagerID INT, 
+DepartmentID INT CONSTRAINT DepartmentID_Fk FOREIGN KEY REFERENCES Dep(DepartmentID)
+
 );

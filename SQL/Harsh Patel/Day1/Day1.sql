@@ -1,6 +1,8 @@
 --Practice Exercise:
 
---(1)Write a SQL statement to create a table named countries including columns CountryId, CountryName and RegionId and make sure that no countries except Italy, India and China will be entered in the table. and combination of columns CountryId and RegionId will be unique.
+--(1)Write a SQL statement to create a table named countries including columns CountryId, 
+--CountryName and RegionId and make sure that no countries except Italy, India and China will be entered in the table.
+--and combination of columns CountryId and RegionId will be unique.
 	
 	CREATE TABLE COUNTRIES 
 	(
@@ -11,23 +13,27 @@
 	INSERT INTO COUNTRIES VALUES(2,'India',2)
 	SELECT * FROM COUNTRIES
 
---(2)Write a SQL statement to create a table named JobHistory including columns EmployeeId, StartDate, End_Eate, Job_Id and Department_Id and make sure that the value against column EndDate will be entered at the time of insertion to the format like ‘–/–/—-‘.
+--(2)Write a SQL statement to create a table named JobHistory including columns EmployeeId, 
+--StartDate, End_Eate, Job_Id and Department_Id and make sure that the value against column 
+--EndDate will be entered at the time of insertion to the format like ‘–/–/—-‘.
 	
 	CREATE TABLE  JobHistory
 	(
 		EmployeeId INT PRIMARY KEY NOT NULL, 
 		StartDate DATE, 
-		End_Date DATE CONSTRAINT ChkEndDate CHECK(End_Date LIKE '--/--/----'), 
+		End_Date VARCHAR(20) CONSTRAINT ChkEndDate CHECK(End_Date LIKE '__/__/____'), 
 		Job_Id INT,
 		Department_Id INT
 	)
-	ALTER TABLE JobHistory ALTER COLUMN End_DATE VARCHAR(20)
-	ALTER TABLE JobHistory ADD CONSTRAINT chkEndDate CHECK (End_Date LIKE '__/__/____')
+	
 	INSERT INTO JobHistory VALUES(1,'2021-01-07','09/08/2021',1,1)
 	SELECT * FROM JobHistory
 
 
---(3)Write a SQL statement to create a table named jobs including columns JobId, JobTitle, MinSalary and MaxSalary, and make sure that, the default value for JobTitle is blank and MinSalary is 8000 and MaxSalary is NULL will be entered automatically at the time of insertion if no value assigned for the specified columns.
+--(3)Write a SQL statement to create a table named jobs including columns JobId, 
+--JobTitle, MinSalary and MaxSalary, and make sure that, the default value for JobTitle 
+--is blank and MinSalary is 8000 and MaxSalary is NULL will be entered automatically 
+--at the time of insertion if no value assigned for the specified columns.
 	
 	CREATE TABLE JOBS 
 	(
@@ -39,7 +45,13 @@
 	INSERT INTO JOBS(JobId)VALUES(1)
 	SELECT * FROM JOBS
 
---(4)Write a SQL statement to create a table employees including columns Employee_Id, FirstName, LastName, Email, PhoneNumber, Hire_Date, Job_Id, Salary, Commission, Manager_Id and Department_Id and make sure that, the Employee_Id column does not contain any duplicate value at the time of insertion, and the foreign key column DepartmentId, reference by the column DepartmentId of Departments table, can contain only those values which are exists in the Department table and another foreign key column JobId, referenced by the column JobId of jobs table, can contain only those values which are exists in the jobs table.
+--(4)Write a SQL statement to create a table employees including columns 
+--Employee_Id, FirstName, LastName, Email, PhoneNumber, Hire_Date, Job_Id, Salary, 
+--Commission, Manager_Id and Department_Id and make sure that, the Employee_Id column does not 
+--contain any duplicate value at the time of insertion, and the foreign key column DepartmentId,
+--reference by the column DepartmentId of Departments table, can contain only those values which are
+--exists in the Department table and another foreign key column JobId, referenced by the column JobId of jobs table,
+--can contain only those values which are exists in the jobs table.
 	
 	CREATE TABLE Departments
 	(
@@ -54,6 +66,11 @@ INSERT INTO Departments VALUES('HR'),
 
 SELECT * FROM Departments
 
+CREATE TABLE Job
+(JobID INT PRIMARY KEY NOT NULL)
+INSERT INTO Job VALUES(1)
+SELECT * FROM Job
+
 CREATE TABLE EMPLOYEES
 	(
 	   Employee_Id INT PRIMARY KEY NOT NULL, 
@@ -62,7 +79,7 @@ CREATE TABLE EMPLOYEES
 	   Email VARCHAR(20),
 	   PhoneNumber VARCHAR(15),
 	   Hire_Date DATE,
-	   Job_Id INT  CONSTRAINT FkJobId FOREIGN KEY REFERENCES jobs(Job_Id),
+	   Job_Id INT  CONSTRAINT FkJobId FOREIGN KEY REFERENCES JOB(JobId),
 	   Salary INT,
 	   Commission INT,
 	   Manager_Id INT,
@@ -71,11 +88,13 @@ CREATE TABLE EMPLOYEES
 
 --Alter statement
 
---(1)Write a SQL statement to add a foreign key constraint named fk_job_id on JobId column of JobHistory table referencing to the primary key JobId of jobs table.
+--(1)Write a SQL statement to add a foreign key constraint named fk_job_id on JobId column of JobHistory table
+--referencing to the primary key JobId of jobs table.
 
 		ALTER TABLE JobHistory ADD CONSTRAINT fk_job_id FOREIGN KEY(Jobid) REFERENCES Jobs(JobId)
 
---(2)Write a SQL statement to drop the existing foreign key fk_job_id from JobHistory table on JobId column which is referencing to the JobId of jobs table.
+--(2)Write a SQL statement to drop the existing foreign key fk_job_id from JobHistory table on JobId column
+--which is referencing to the JobId of jobs table.
 
 		ALTER TABLE JobHistory DROP CONSTRAINT fk_job_id 
 
@@ -85,7 +104,10 @@ CREATE TABLE EMPLOYEES
 		
 --Assignment:
 
---You have been hired to create a relational database to support a car sales business. You need to store information on the business’s employees, inventory, and completed sales. You also need to account for the fact that each salesperson receives a different percentage of their sales in commission. What tables and columns would you create in your relational database, and how would you link the tables?
+--You have been hired to create a relational database to support a car sales business.
+--You need to store information on the business’s employees, inventory, and completed sales.
+--You also need to account for the fact that each salesperson receives a different percentage of their sales in commission.
+--What tables and columns would you create in your relational database, and how would you link the tables?
 
 
 CREATE TABLE EmployeesB
@@ -120,8 +142,8 @@ CREATE TABLE EmployeesB
     SaleAmt int NOT NULL,
     PaymentMethod varchar(10) NOT NULL,
     CustomerName varchar(30) NOT NULL,
-    CONSTRAINT fk_CarID FOREIGN KEY (CarID) REFERENCES Inventory(CarID) ON DELETE CASCADE ON UPDATE CASCADE
+    CONSTRAINT fk_CarID FOREIGN KEY (CarID) REFERENCES Inventory(CarID) 
 )
 
 ALTER TABLE Sales
-ADD CONSTRAINT fk_empid FOREIGN KEY (EmployeeID) REFERENCES EmployeesB(EmployeeID) ON DELETE CASCADE ON UPDATE CASCADE
+ADD CONSTRAINT fk_empid FOREIGN KEY (EmployeeID) REFERENCES EmployeesB(EmployeeID) 

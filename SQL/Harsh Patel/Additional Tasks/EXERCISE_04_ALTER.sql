@@ -16,7 +16,7 @@
 
 	ALTER TABLE Locations
 	ADD Region_ID INT  
-	AFTER State/Province
+	AFTER State_Province
 
 --5. Write a SQL statement change the data type of the column country_id to integer in the table locations.
 
@@ -72,5 +72,5 @@
 		
 
 --15. Write a SQL statement to drop the index indx_job_id from job_history table.
-	ALTER TABLE Locations
+	ALTER TABLE job_history
 	DROP INDEX indx_job_id 

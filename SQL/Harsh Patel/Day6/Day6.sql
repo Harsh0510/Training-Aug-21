@@ -15,7 +15,7 @@ SELECT * FROM Locations
 		GO
 		CREATE VIEW EmployeeData1
 		AS
-		SELECT E.First_Name,E.Last_Name,E.Salary,E.Joinning_Date,I.Incentive_Date 
+		SELECT E.First_Name,E.Last_Name,E.Salary,E.Joinning_Date,I.Incentive_Date,I.Incentive_Amount 
 		FROM Employee E JOIN Incentives I ON E.Employee_ID=I.Employee_ID
 		GO
 		SELECT * FROM EmployeeData1

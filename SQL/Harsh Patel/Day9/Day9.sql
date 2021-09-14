@@ -1,26 +1,13 @@
 --1-Create a batch Select Banking as ‘Bank Dept’, Insurance as ‘Insurance Dept’ and Services as ‘Services Dept’ from employee table.
 
 
-SELECT *
+Select Banking as 'Bank Dept',Insurance as 'Insurance Dept',Services as 'Services Dept' 
 FROM Employees
-SELECT *
-FROM Departments
-SELECT e.*
-	, CASE d.DepartmentName
-		WHEN 'IT' THEN 'IT Dept'
-		WHEN 'Sales' THEN 'Sales Dept'
-		WHEN 'Accounting' THEN 'Accounting Dept'
-		ELSE d.DepartmentName
-		END 
-FROM Employees e
-INNER JOIN Departments d
-ON e.DepartmentID = d.DepartmentID
 GO
-
 --2-5 Students Name, Address, City, DOB, Standard need to be inserted in the student table, need to fetch these result from json variable.
 --and select output in the json format
 
-CREATE DATABASE JSON1
+
 
 
 CREATE TABLE Students

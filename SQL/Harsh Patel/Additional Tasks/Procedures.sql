@@ -10,7 +10,7 @@ BEGIN
 	SELECT * FROM Employees WHERE Salary>10000
 END
 GO
-
+EXEC Dep1
 
 --Modify Procedure
 
@@ -88,22 +88,6 @@ END
 GO
 
 DECLARE @a INT
-EXEC Dep2 1,1,@result=@a OUTPUT;
+EXEC Dep2 1,1,@a OUTPUT;
 SELECT @a
 
-GO
-ALTER PROC Emp2
-@EmployeeID INT,
-@DepartmentName VARCHAR(20) OUTPUT,
-@FirstName VARCHAR(20) OUTPUT
-AS
---IF EXISTS(SELECT * FROM Employees WHERE EmployeeID=@EmployeeID)
---BEGIN
-	SELECT d.DepartmentName,e.FirstName FROM Employees e JOIN Departments d
-	ON e.DepartmentID=d.DepartmentID WHERE EmployeeID=@EmployeeID
---RETURN 0
---END
-GO
-DECLARE @a VARCHAR(20),@b VARCHAR(20)
-EXEC Emp2 197,@DepartmentName=@a,@FIrstNAme=@b
-SELECT @a,@b

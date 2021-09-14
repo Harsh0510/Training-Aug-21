@@ -1,4 +1,4 @@
-USE DB_ExtraQueries
+USE Exercise1
 
 --1. Write a SQL statement to insert a record with your own value into the table countries against each columns.and region_id.
 
@@ -37,9 +37,7 @@ SELECT * FROM country_new;
 
 --6.Write a SQL statement to insert one row in jobs table to ensure that no duplicate value will be entered in the job_id column.
 
-ALTER TABLE Jobs
-ALTER COLUMN JobID UNIQUE
-INSERT INTO jobs VALUES(2001,'OFFICER',9000);
+INSERT INTO jobs VALUES('OFFICER',20000,25000);
 
 --7. Write a SQL statement to insert a record into the table countries to ensure that, a country_id and region_id combination will be entered once in the table.
 
@@ -53,7 +51,7 @@ VALUES ('Inida', 4),
 
 ALTER TABLE Countries
 ALTER COLUMN CountryID UNIQUE IDENTITY(1,1)
-INSERT INTO countries(COUNTRY_NAME,REGION_ID) VALUES('Canada',103);
+INSERT INTO countries VALUES('Canada',103);
 
 --9. Write a SQL statement to insert records into the table countries to ensure that the country_id column will not contain any duplicate data and this will be automatically incremented and the column country_name will be filled up by 'N/A' if no value assigned for that column.
 
@@ -65,16 +63,16 @@ ALTER COLUMN CountryName DEFAULT 'N/A'
 --10. Write a SQL statement to insert rows in the job_history table in which one column job_id is containing those values which are exists in job_id column of jobs table.
 
 
-INSERT INTO job_history VALUES(507,2001,80);
+INSERT INTO jobhistory VALUES(507,'2021-01-07','01/07/2021',2001,80);
 
 --11. Write a SQL statement to insert rows into the table employees in which a set of columns department_id and manager_id contains a unique value and that combined values must have exists into the table departments.
 
-INSERT INTO employees VALUES(510,'Manav','PAtel','CLERK',19000,207,70);
-INSERT INTO employees VALUES(511,'Raj','Shah','CLERK',17000,210,90);
+INSERT INTO employees VALUES(510,'Manav','Patel','manav@gmail.com','7365','2021-01-07','1001',20000.2,.22,101,201);
+
 
 
 
 --12. Write a SQL statement to insert rows into the table employees in which a set of columns department_id and job_id contains the values which must have exists into the table departments and jobs.
 
 
-INSERT INTO employees VALUES(510,'Alex','Hanes',60,1001,18000);
+INSERT INTO employees1 VALUES(510,'Alex','Hanes','alex@gmail.com','4545676788','2021-01-07',1001,2000.22,.22,101,201);

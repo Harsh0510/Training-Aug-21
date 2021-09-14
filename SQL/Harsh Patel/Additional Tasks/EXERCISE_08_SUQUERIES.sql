@@ -130,5 +130,5 @@ SELECT * FROM Locations
 --22. Write a query to get nth max salaries of employees. 
 
 		SELECT Salary FROM (SELECT  DISTINCT Salary,DENSE_RANK()OVER (ORDER BY Salary ASC) AS RankNumber FROM Employees)a
-		WHERE RankNumber=&n 
+		WHERE RankNumber=@n 
 	

@@ -21,7 +21,7 @@ SELECT CONCAT(FirstName,SPACE(1),LastName) AS 'Full Name'
 	, Salary
 FROM Employees 
 WHERE DepartmentID IN(30,100)
-AND  Salary BETWEEN 10000 AND 15000
+AND  Salary NOT BETWEEN 10000 AND 15000
 
 --4. Write a query to display the names (first_name, last_name) and hire date for all employees who were hired in 1987.
 

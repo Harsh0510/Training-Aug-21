@@ -55,10 +55,9 @@ FROM Employees
 
 --10)Write a query to get the number of jobs available in the employees table.
 
-SELECT JobId
-	, COUNT(*) AS 'Total Jobs'
+SELECT COUNT(JobId) AS 'Total Jobs'
 FROM Employees
-GROUP BY JobId
+
 
 --11)Write a query get all first name from employees table in uppr case.
 
