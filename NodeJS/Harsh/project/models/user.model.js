@@ -11,7 +11,7 @@ const userSchema = new mongoose.Schema({
     },
     password: {
         type: String,
-        minlength: 5,
+        minlength: 1,
         maxlength: 1024,
         required: true,
         unique: true
@@ -20,7 +20,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
         minlength: 1,
-        maxlength: 9,
+        maxlength: 255,
         unique: true
     },
     phoneNumber: {
@@ -28,9 +28,9 @@ const userSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
-    role: {
-        type: String,
-        enum: ["admin", "user"],
+    roles: {
+        type: Number,
+        ref: "role",
         required: true
     },
     isActive: {
