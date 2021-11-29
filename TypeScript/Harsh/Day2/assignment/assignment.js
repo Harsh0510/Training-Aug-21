@@ -21,8 +21,8 @@ var Product = /** @class */ (function () {
     return Product;
 }());
 var obj = [new Product(1, "laptop", 10, 50000),
-    new Product(2, "tv", 20, 25000),
-    new Product(3, "refrigerator", 30, 30000),
-    new Product(4, "washing machine", 10, 40000),
-    new Product(5, "mobile", 50, 20000)];
+new Product(2, "tv", 20, 25000),
+new Product(3, "refrigerator", 30, 30000),
+new Product(4, "washing machine", 10, 40000),
+new Product(5, "mobile", 50, 20000)];
 obj[2].purchase(7);
