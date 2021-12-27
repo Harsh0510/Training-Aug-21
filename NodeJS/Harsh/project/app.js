@@ -5,7 +5,9 @@ const port = process.env.PORT || 3000;
 const app = express();
 app.use(express.json());
 
-app.listen(port, () => { console.log(`server started on port:${port}`) });
+app.listen(port, () => {
+  console.log(`server started on port:${port}`);
+});
 
 // jwt configuration
 
@@ -17,10 +19,12 @@ const mongoose = require("mongoose");
 const mongoDB = "mongodb://localhost/relianceDigital";
 
 const connect = async () => {
-    try {
-        await mongoose.connect(mongoDB);
-        console.log("connected");
-    } catch (err) { console.log(err) }
+  try {
+    await mongoose.connect(mongoDB);
+    console.log("connected");
+  } catch (err) {
+    console.log(err);
+  }
 };
 connect();
 
@@ -66,4 +70,3 @@ app.use("/order", orderRoutes);
 
 const paymentRoutes = require("./controllers/payment.controller");
 app.use("/payment", paymentRoutes);
-
