@@ -1,0 +1,58 @@
+.newProduct {
+  flex: 4;
+  margin: 5px;
+  padding: 5px;
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+.newProduct .addProductForm {
+  margin-top: 10px;
+}
+.newProduct .addProductItem {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.newProduct .addProductItem > label {
+  color: gray;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.newProduct .addProductItem > input {
+  padding: 5px;
+}
+.newProduct .addProductItem > select {
+  padding: 5px;
+}
+.newProduct .addProductButton {
+  margin-top: 10px;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: darkblue;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.newProduct .productForm {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.newProduct .productFormLeft {
+  display: flex;
+  flex-direction: column;
+}
+.newProduct .productFormLeft > label {
+  margin-bottom: 10px;
+  color: gray;
+}
+.newProduct .productFormLeft > input {
+  margin-bottom: 10px;
+  border: none;
+  padding: 5px;
+  border-bottom: 1px solid gray;
+}
+.newProduct .productFormLeft > select {
+  margin-bottom: 10px;
+}

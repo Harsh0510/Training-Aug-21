@@ -1,0 +1,105 @@
+.cart-parent .cart-header {
+  display: flex;
+  justify-content: space-around;
+}
+.cart-parent .cart-text {
+  width: 60%;
+}
+.cart-parent .checkout {
+  width: 30%;
+}
+.cart-parent .checkout button {
+  width: 100%;
+  height: 6vh;
+  background-color: #d32f2f;
+  color: #fdf5f5;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.2rem;
+}
+.cart-parent .cart-content {
+  display: flex;
+  justify-content: space-around;
+}
+.cart-parent .cart {
+  width: 60%;
+}
+.cart-parent .cart-information {
+  width: 30%;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  height: 30vh;
+}
+.cart-parent .cart-cart {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+.cart-parent .cart-item {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-parent .cart-button {
+  display: flex;
+  justify-content: space-evenly;
+}
+.cart-parent .minusbutton {
+  height: 2rem !important;
+  width: 1.9rem;
+  font-weight: bold;
+  font-size: large;
+  border: none;
+  background-color: #cccccc;
+}
+.cart-parent .plusbutton {
+  height: 2rem !important;
+  width: 1.9rem;
+  font-weight: bold;
+  border: none;
+  font-size: large;
+  background-color: #cccccc;
+}
+.cart-parent input {
+  width: 12%;
+}
+.cart-parent .cart-image-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 100%; */
+  justify-content: space-evenly !important;
+}
+.cart-parent img {
+  /* width: 17vh; */
+  height: 20vh;
+}
+.cart-parent .remove {
+  width: 100%;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  height: 2rem;
+  cursor: pointer;
+  color: #397bee;
+  padding: 0 50%;
+  font-weight: 500;
+}
+.cart-parent .cart-price {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+.cart-parent .deliverycharge {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.cart-parent .amount {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+.cart-parent .line {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}

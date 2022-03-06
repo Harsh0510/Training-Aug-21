@@ -1,0 +1,110 @@
+.subcategorychild-edit {
+  flex: 4;
+  padding: 20px;
+}
+.subcategorychild-edit .subcategorychildTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.subcategorychild-edit .subcategorychildAddButton {
+  width: 80px;
+  border: none;
+  padding: 5px;
+  background-color: teal;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.subcategorychild-edit .subcategorychildTop {
+  display: flex;
+}
+.subcategorychildTopLeft,
+.subcategorychild-edit .subcategorychildTopRight {
+  flex: 1;
+}
+.subcategorychild-edit .subcategorychildTopRight {
+  padding: 20px;
+  margin: 20px;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+.subcategorychild-edit .subcategorychildInfoImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+.subcategorychild-edit .subcategorychildInfoTop {
+  display: flex;
+  align-items: center;
+}
+.subcategorychild-edit .subcategorychildName {
+  font-weight: 600;
+}
+.subcategorychild-edit .subcategorychildInfoBottom {
+  margin-top: 10px;
+}
+.subcategorychild-edit .subcategorychildInfoItem {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.subcategorychild-edit .subcategorychildInfoValue {
+  font-weight: 300;
+}
+.subcategorychild-edit .subcategorychildBottom {
+  padding: 20px;
+  margin: 20px;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+.subcategorychild-edit .subcategorychildForm {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.subcategorychild-edit .subcategorychildFormLeft {
+  display: flex;
+  flex-direction: column;
+}
+.subcategorychild-edit .subcategorychildFormLeft > label {
+  margin-bottom: 10px;
+  color: gray;
+}
+.subcategorychild-edit .subcategorychildFormLeft > input {
+  margin-bottom: 10px;
+  border: none;
+  padding: 5px;
+  border-bottom: 1px solid gray;
+}
+.subcategorychild-edit .subcategorychildFormLeft > select {
+  margin-bottom: 10px;
+}
+.subcategorychild-edit .subcategorychildUploadImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+.subcategorychild-edit .subcategorychildFormRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.subcategorychild-edit .subcategorychildUpload {
+  display: flex;
+  align-items: center;
+}
+.subcategorychild-edit .subcategorychildButton {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: darkblue;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}

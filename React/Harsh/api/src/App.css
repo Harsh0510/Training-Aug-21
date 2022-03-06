@@ -1,0 +1,39 @@
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  margin: 2rem 2rem;
+}
+
+th {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 1rem 1rem;
+}
+
+tr {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 1rem 1rem;
+}
+
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 1rem 1rem;
+}
+
+form {
+  display: flex;
+  flex-flow: column;
+  margin: 2rem 2rem;
+  border: 2px solid black;
+  width: 200px;
+  height: 200px;
+}
+input {
+  margin: 1rem 1rem;
+}
+button {
+  margin: 1rem 1rem;
+  width: 150px;
+}

@@ -1,0 +1,28 @@
+/* .address {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 2rem;
+}
+.address Form {
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 2rem;
+}
+.address Form button {
+  width: 100%;
+}
+.address h5 {
+  width: 100%;
+  margin-bottom: 0 !important;
+  padding: 1rem;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 768px) {
+  .address Form {
+    width: 30%;
+  }
+  .address h5 {
+    width: 30%;
+  }
+} */

@@ -32,17 +32,17 @@ class CategoryController {
     const category = new CategoryDomain();
     category.deletecategory(req, res);
   }
+  // navbar
+  static navbar(req, res) {
+    const category = new CategoryDomain();
+    category.navbar(req, res);
+  }
 }
 
 // category routes
-
+// router.get("/navbar", verifytoken, authPage([1]), CategoryController.navbar);
 router.post("/", verifytoken, authPage([1]), CategoryController.createcategory);
-router.get(
-  "/",
-  verifytoken,
-  authPage([1, 2]),
-  CategoryController.getAllcategories
-);
+router.get("/", CategoryController.getAllcategories);
 router.get(
   "/:id",
   verifytoken,

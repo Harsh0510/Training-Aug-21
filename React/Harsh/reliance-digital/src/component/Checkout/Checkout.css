@@ -1,0 +1,41 @@
+.order {
+  display: flex;
+  justify-content: space-around;
+}
+.order .orderItems {
+  width: 60% !important;
+}
+.order .orderItem {
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  display: flex !important;
+  justify-content: space-around;
+  align-items: center;
+  width: 90% !important;
+}
+.order .orderInformation {
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  height: 30vh;
+}
+
+.orderItem img {
+  height: 20vh;
+}
+
+.order .orderPrice {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.order .deliverycharge {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.order .amount {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}

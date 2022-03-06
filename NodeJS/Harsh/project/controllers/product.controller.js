@@ -37,12 +37,7 @@ class ProductController {
 // product routes
 
 router.post("/", verifytoken, authPage([1]), ProductController.createProduct);
-router.get(
-  "/",
-  verifytoken,
-  authPage([1, 2]),
-  ProductController.getAllProducts
-);
+router.get("/", ProductController.getAllProducts);
 router.get("/:id", verifytoken, authPage([1, 2]), ProductController.getProduct);
 router.put("/:id", verifytoken, authPage([1]), ProductController.updateProduct);
 router.delete(

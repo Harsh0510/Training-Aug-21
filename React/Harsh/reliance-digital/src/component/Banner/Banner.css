@@ -1,0 +1,37 @@
+.banner .slick-prev {
+  z-index: 1;
+  left: 0px !important;
+  /* background-color: grey; */
+}
+.banner .slick-prev:before {
+  color: black !important;
+}
+.banner .slick-next:before {
+  color: black !important;
+}
+.banner .slick-next {
+  z-index: 1;
+  right: 0px !important;
+}
+.banner .slick-dots {
+  bottom: 1rem;
+}
+/* .banner .offerimages {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+} */
+.banner .offerimages img {
+  width: 40% !important;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .banner .offerimg {
+    flex-direction: column;
+  }
+  .banner .offerimage {
+    flex-direction: column;
+  }
+}

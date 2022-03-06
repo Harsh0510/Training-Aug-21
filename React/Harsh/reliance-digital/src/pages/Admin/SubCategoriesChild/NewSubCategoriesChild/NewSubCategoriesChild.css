@@ -1,0 +1,58 @@
+.newsubcategorychild {
+  flex: 4;
+  margin: 5px;
+  padding: 5px;
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+.newsubcategorychild .addsubcategorychildForm {
+  margin-top: 10px;
+}
+.newsubcategorychild .addsubcategorychildItem {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.newsubcategorychild .addsubcategorychildItem > label {
+  color: gray;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.newsubcategorychild .addsubcategorychildItem > input {
+  padding: 5px;
+}
+.newsubcategorychild .addsubcategorychildItem > select {
+  padding: 5px;
+}
+.newsubcategorychild .addsubcategorychildButton {
+  margin-top: 10px;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: darkblue;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.newsubcategorychild .subcategorychildForm {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.newsubcategorychild .subcategorychildFormLeft {
+  display: flex;
+  flex-direction: column;
+}
+.newsubcategorychild .subcategorychildFormLeft > label {
+  margin-bottom: 10px;
+  color: gray;
+}
+.newsubcategorychild .subcategorychildFormLeft > input {
+  margin-bottom: 10px;
+  border: none;
+  padding: 5px;
+  border-bottom: 1px solid gray;
+}
+.newsubcategorychild .subcategorychildFormLeft > select {
+  margin-bottom: 10px;
+}

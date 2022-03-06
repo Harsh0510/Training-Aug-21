@@ -1,0 +1,110 @@
+.category-edit {
+  flex: 4;
+  padding: 20px;
+}
+.category-edit .categoryTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.category-edit .categoryAddButton {
+  width: 80px;
+  border: none;
+  padding: 5px;
+  background-color: teal;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.category-edit .categoryTop {
+  display: flex;
+}
+.categoryTopLeft,
+.category-edit .categoryTopRight {
+  flex: 1;
+}
+.category-edit .categoryTopRight {
+  padding: 20px;
+  margin: 20px;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+.category-edit .categoryInfoImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+.category-edit .categoryInfoTop {
+  display: flex;
+  align-items: center;
+}
+.category-edit .categoryName {
+  font-weight: 600;
+}
+.category-edit .categoryInfoBottom {
+  margin-top: 10px;
+}
+.category-edit .categoryInfoItem {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.category-edit .categoryInfoValue {
+  font-weight: 300;
+}
+.category-edit .categoryBottom {
+  padding: 20px;
+  margin: 20px;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+.category-edit .categoryForm {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.category-edit .categoryFormLeft {
+  display: flex;
+  flex-direction: column;
+}
+.category-edit .categoryFormLeft > label {
+  margin-bottom: 10px;
+  color: gray;
+}
+.category-edit .categoryFormLeft > input {
+  margin-bottom: 10px;
+  border: none;
+  padding: 5px;
+  border-bottom: 1px solid gray;
+}
+.category-edit .categoryFormLeft > select {
+  margin-bottom: 10px;
+}
+.category-edit .categoryUploadImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+.category-edit .categoryFormRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.category-edit .categoryUpload {
+  display: flex;
+  align-items: center;
+}
+.category-edit .categoryButton {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: darkblue;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}

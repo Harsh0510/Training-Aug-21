@@ -1,0 +1,9 @@
+form {
+  margin: 1rem;
+  font-size: large;
+}
+
+input {
+  display: block;
+  margin: 10px 0;
+}

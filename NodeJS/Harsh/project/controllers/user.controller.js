@@ -15,6 +15,11 @@ class UserController {
     const user = new UserDomain();
     user.getAllUsers(req, res);
   }
+  // get  currentUser
+  static getCurrentUser(req, res) {
+    const user = new UserDomain();
+    user.getCurrentUser(req, res);
+  }
   // get user by id
   static getUserById(req, res) {
     const user = new UserDomain();
@@ -41,6 +46,12 @@ class UserController {
 router.post("/", UserController.createUser);
 router.post("/login", UserController.loginUser);
 router.get("/", verifytoken, authPage([1]), UserController.getAllUsers);
+router.get(
+  "/currentUser",
+  verifytoken,
+  authPage([1, 2]),
+  UserController.getCurrentUser
+);
 router.get("/:id", verifytoken, authPage([1, 2]), UserController.getUserById);
 router.put("/:id", verifytoken, authPage([1, 2]), UserController.deleteUser);
 module.exports = router;

@@ -1,0 +1,110 @@
+.subcategory-edit {
+  flex: 4;
+  padding: 20px;
+}
+.subcategory-edit .subcategoryTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.subcategory-edit .subcategoryAddButton {
+  width: 80px;
+  border: none;
+  padding: 5px;
+  background-color: teal;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.subcategory-edit .subcategoryTop {
+  display: flex;
+}
+.subcategoryTopLeft,
+.subcategory-edit .subcategoryTopRight {
+  flex: 1;
+}
+.subcategory-edit .subcategoryTopRight {
+  padding: 20px;
+  margin: 20px;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+.subcategory-edit .subcategoryInfoImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+.subcategory-edit .subcategoryInfoTop {
+  display: flex;
+  align-items: center;
+}
+.subcategory-edit .subcategoryName {
+  font-weight: 600;
+}
+.subcategory-edit .subcategoryInfoBottom {
+  margin-top: 10px;
+}
+.subcategory-edit .subcategoryInfoItem {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.subcategory-edit .subcategoryInfoValue {
+  font-weight: 300;
+}
+.subcategory-edit .subcategoryBottom {
+  padding: 20px;
+  margin: 20px;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+.subcategory-edit .subcategoryForm {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.subcategory-edit .subcategoryFormLeft {
+  display: flex;
+  flex-direction: column;
+}
+.subcategory-edit .subcategoryFormLeft > label {
+  margin-bottom: 10px;
+  color: gray;
+}
+.subcategory-edit .subcategoryFormLeft > input {
+  margin-bottom: 10px;
+  border: none;
+  padding: 5px;
+  border-bottom: 1px solid gray;
+}
+.subcategory-edit .subcategoryFormLeft > select {
+  margin-bottom: 10px;
+}
+.subcategory-edit .subcategoryUploadImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+.subcategory-edit .subcategoryFormRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.subcategory-edit .subcategoryUpload {
+  display: flex;
+  align-items: center;
+}
+.subcategory-edit .subcategoryButton {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: darkblue;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}

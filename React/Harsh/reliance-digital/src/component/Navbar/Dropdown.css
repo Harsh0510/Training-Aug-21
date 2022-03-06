@@ -1,0 +1,114 @@
+/* .nav-parent {
+  position: relative !important;
+  width: 100%;
+} */
+.nav-parent .navbar {
+  background-color: #1f4985 !important;
+  /* height: 2.5rem !important; */
+  overflow-x: hidden;
+}
+/* #navbar {
+  display: flex;
+  flex-wrap: wrap;
+} */
+.nav-parent .categories {
+  color: #ffffdd !important;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.nav-parent .categories:hover {
+  background-color: #e42529;
+}
+.nav-parent .dropdown-menu {
+  background-color: #263065;
+  color: #ffffdd;
+  width: 90% !important;
+  position: fixed !important;
+  top: 109px;
+  left: 60px;
+}
+.nav-parent .dropdown-item {
+  color: #ffffdd;
+  font-weight: 500;
+}
+.nav-parent .dropdown-item:hover {
+  background-color: #263065;
+  color: #ffffdd;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.nav-parent .subcategorieschild {
+  margin-left: 1rem;
+  font-weight: lighter;
+  display: flex;
+}
+.nav-parent .subcategorieschild:hover {
+  color: #ffffdd;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.nav-parent .cat {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 400px;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-parent {
+    position: fixed;
+    top: 0;
+  }
+  .nav-parent .navbar {
+    height: auto !important;
+    background-color: #e42529 !important;
+  }
+  .nav-parent .bar {
+    color: white;
+  }
+
+  .navbar-toggler,
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  .nav-parent .categories {
+    /* border-top: 1px solid black; */
+    color: black !important;
+    font-size: 15px !important;
+    border-top: 1px solid grey;
+  }
+  .nav-parent #navbar {
+    background-color: white !important;
+    width: 400px !important;
+  }
+  .nav-parent .dropdown-menu {
+    background-color: white;
+    color: black;
+    width: 100% !important;
+    overflow-y: scroll !important;
+    position: static !important;
+  }
+  .nav-parent .cat {
+    display: block;
+  }
+  .nav-parent .subc {
+    color: black !important;
+  }
+  .nav-parent .subchild {
+    color: black !important;
+  }
+  .nav-parent .categories:hover {
+    background-color: #ffffdd;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  .nav-parent .categories {
+    font-size: 7px;
+  }
+}

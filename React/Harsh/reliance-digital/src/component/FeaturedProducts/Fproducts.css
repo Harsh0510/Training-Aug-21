@@ -1,0 +1,72 @@
+.featuredproducts {
+  display: flex;
+  justify-content: space-around;
+}
+.featuredproducts .featuredimage {
+  height: 50%;
+  width: 20%;
+}
+.featuredproducts .slider {
+  width: 70%;
+}
+.featuredproducts .sliderproduct {
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.featuredproducts .slider img {
+  height: 6rem;
+  margin: 0 auto;
+}
+/* .featuredproducts .phoneimage {
+  height: 6rem !important;
+}
+.featuredproducts .televisionimage {
+  height: 6rem !important;
+} */
+.featuredproducts .slick-arrow {
+  z-index: -1 !important;
+  background-color: grey !important;
+}
+.featuredproducts .slick-prev {
+  z-index: 100 !important;
+  height: 25% !important;
+  width: 4% !important;
+  left: 0px !important;
+}
+
+.featuredproducts .slick-next {
+  z-index: 100 !important;
+  height: 25% !important;
+  width: 4% !important;
+  right: 0px !important;
+}
+.featuredproducts .name {
+  color: #1f4985 !important;
+  text-decoration: none !important;
+  height: 9vh !important;
+}
+.featuredproducts .name:hover {
+  color: #e42529 !important;
+}
+.featuredproducts .dealprice {
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.featuredproducts .offerprice {
+  width: 15vw !important;
+}
+@media screen and (max-width: 1000px) {
+  .featuredproducts {
+    flex-direction: column;
+  }
+  .featuredproducts .featuredimage {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto 5% auto;
+  }
+  .featuredproducts .slider {
+    margin: 0 auto 0 auto;
+    width: 100%;
+  }
+}

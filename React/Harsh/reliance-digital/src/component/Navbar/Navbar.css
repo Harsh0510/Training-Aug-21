@@ -1,0 +1,92 @@
+.navparent {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 101;
+}
+header {
+  background-color: #e42529;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .center {
+  width: 35% !important;
+}
+header .input {
+  border-radius: 0;
+}
+header .cartLength {
+  position: absolute;
+  background-color: black;
+  top: 5px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  right: 12.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .center .button {
+  width: 25%;
+  background-color: #44adfb;
+  border: none;
+  border-radius: 0;
+}
+header .right {
+  display: flex;
+  color: #ffffff;
+  font-weight: 500;
+  width: 20%;
+  justify-content: space-evenly;
+}
+header .line {
+  border: 0;
+  background-color: #ffffff;
+  height: 1.4rem;
+  width: 0.5px;
+}
+header .loginDropdown {
+  background-color: #e42529;
+}
+header .logn {
+  cursor: pointer !important;
+}
+@media screen and (max-width: 1000px) {
+  header {
+    flex-direction: column;
+    position: relative;
+    height: 110px;
+  }
+  header .logo {
+    position: absolute;
+    top: 0;
+    left: 80px;
+  }
+  header .center {
+    width: 97% !important;
+    position: absolute;
+    bottom: 10%;
+  }
+  header .right .line,
+  header .right .logn,
+  header .right .contact,
+  header .center .button {
+    display: none;
+  }
+  header .cart .s {
+    display: none;
+  }
+  header .cart {
+    position: absolute;
+    right: 3%;
+    top: 10%;
+    font-size: 30px;
+  }
+}
+
+/* @media screen and (max-width: 950px) {
+  header .right {
+    font-size: small;
+  }
+} */

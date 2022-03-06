@@ -1,13 +1,20 @@
 const express = require("express");
 require("dotenv").config();
 const port = process.env.PORT || 3000;
-
+const verifytoken = require("./authentication/verifytoken");
 const app = express();
 app.use(express.json());
 
 app.listen(port, () => {
   console.log(`server started on port:${port}`);
 });
+
+var cors = require("cors");
+app.options(
+  "*",
+  cors({ origin: "http://localhost:3001", optionsSuccessStatus: 200 })
+);
+app.use(cors({ origin: "http://localhost:3001", optionsSuccessStatus: 200 }));
 
 // jwt configuration
 
@@ -28,9 +35,22 @@ const connect = async () => {
 };
 connect();
 
+// file upload
+const fileupload = require("express-fileupload");
+app.use(
+  fileupload({
+    useTempFiles: true,
+  })
+);
+
 // routes
 const userRoutes = require("./controllers/user.controller");
 app.use("/users", userRoutes);
+
+// profile routes
+
+const profileRoutes = require("./controllers/profile.controller");
+app.use("/profile", profileRoutes);
 
 const createRole = require("./models/role.model");
 // createRole(
@@ -46,10 +66,20 @@ const createRole = require("./models/role.model");
 const productRoutes = require("./controllers/product.controller");
 app.use("/products", productRoutes);
 
-// cart routes
+//  discount routes
 
-const cartRoutes = require("./controllers/cart.item.controller");
-app.use("/cart", cartRoutes);
+const discountRoutes = require("./controllers/discount.controller");
+app.use("/discount", discountRoutes);
+
+// brand routes
+
+const brandRoutes = require("./controllers/brand.controller");
+app.use("/brands", brandRoutes);
+
+// cartItem routes
+
+const cartItemRoutes = require("./controllers/cart.item.controller");
+app.use("/cartItem", cartItemRoutes);
 
 // category routes
 
@@ -61,12 +91,24 @@ app.use("/category", categoryRoutes);
 const subCategoryRoutes = require("./controllers/subcategory.controller");
 app.use("/subCategory", subCategoryRoutes);
 
+// subcategorychild routes
+
+const subCategoryChildRoutes = require("./controllers/subcategorychild.controller");
+app.use("/subCategoryChild", subCategoryChildRoutes);
+
 // order routes
 
-const orderRoutes = require("./controllers/order.details.controller");
+const orderRoutes = require("./controllers/order.controller");
 app.use("/order", orderRoutes);
+
+// address routes
+
+const addressRoutes = require("./controllers/address.controller");
+app.use("/address", addressRoutes);
 
 // payment routes
 
 const paymentRoutes = require("./controllers/payment.controller");
 app.use("/payment", paymentRoutes);
+
+module.exports = app;

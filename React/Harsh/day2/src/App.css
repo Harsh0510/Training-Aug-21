@@ -1,0 +1,32 @@
+.book {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+  column-gap: 100px;
+}
+
+.books {
+  text-align: center;
+  background-color: #ebebeb;
+  padding-top: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 300px;
+  height: 500px;
+}
+
+.student {
+  display: flex;
+  padding: 10px;
+  column-gap: 20px;
+}
+
+.students {
+  text-align: center;
+  background-color: #ebebeb;
+  padding-top: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 300px;
+  min-height: 400px;
+}

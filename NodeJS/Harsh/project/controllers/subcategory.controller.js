@@ -42,12 +42,7 @@ router.post(
   authPage([1]),
   SubCategoryController.createSubCategory
 );
-router.get(
-  "/",
-  verifytoken,
-  authPage([1, 2]),
-  SubCategoryController.getAllSubCategories
-);
+router.get("/", SubCategoryController.getAllSubCategories);
 router.get(
   "/:id",
   verifytoken,

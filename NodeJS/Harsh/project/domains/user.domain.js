@@ -11,7 +11,7 @@ class UserDomain {
     if (error) {
       return res.status(400).json({ message: error.details[0].message });
     }
-    let user = await UserModel.findOne({ email: req.body.email });
+    let user = await UserModel.findOne({ emailAddress: req.body.emailAddress });
     if (user) {
       res.status(400).json({ message: "user already registered" });
     } else {
@@ -27,7 +27,22 @@ class UserDomain {
     const user = await UserModel.find();
     res.send(user);
   }
-
+  //to get current user
+  async getCurrentUser(req, res) {
+    try {
+      const _id = parseInt(req.decoded._id);
+      const user = await UserModel.findById({ _id }).populate("roles");
+      if (user) {
+        res.send(user);
+      } else {
+        res.status(400).json({
+          message: "User logged out!",
+        });
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  }
   // get user by id
   async getUserById(req, res) {
     try {
@@ -52,13 +67,13 @@ class UserDomain {
       if (error) {
         return res.status(400).json({ message: error.details[0].message });
       }
-      let user = await UserModel.findOne({ email: data.email });
+      let user = await UserModel.findOne({ emailAddress: data.emailAddress });
       if (!user) {
-        return res.status(400).json({ message: "invalid email or password" });
+        return res.status(400).json({ message: "Invalid email or password" });
       }
       const validatePassword = await compare(data.password, user.password);
       if (!validatePassword) {
-        return res.status(400).json({ message: "invalid password" });
+        return res.status(400).json({ message: "Invalid email or password" });
       }
       // generate token
       const token = jwt.sign(user.toJSON(), global.config.secretKey, {

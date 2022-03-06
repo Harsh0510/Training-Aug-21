@@ -1,0 +1,62 @@
+.newcategory {
+  flex: 4;
+  margin: 5px;
+  padding: 5px;
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+.newcategory .addcategoryForm {
+  margin-top: 10px;
+}
+.newcategory .addcategoryItem {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.newcategory .addcategoryItem > label {
+  color: gray;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.newcategory .addcategoryItem > input {
+  padding: 5px;
+}
+.newcategory .addcategoryItem > select {
+  padding: 5px;
+}
+.newcategory .addcategoryButton {
+  margin-top: 10px;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: darkblue;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* .newcategory .categoryButton {
+  background-color: darkblue !important;
+  color: white;
+} */
+.newcategory .categoryForm {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.newcategory .categoryFormLeft {
+  display: flex;
+  flex-direction: column;
+}
+.newcategory .categoryFormLeft > label {
+  margin-bottom: 10px;
+  color: gray;
+}
+.newcategory .categoryFormLeft > input {
+  margin-bottom: 10px;
+  border: none;
+  padding: 5px;
+  border-bottom: 1px solid gray;
+}
+.newcategory .categoryFormLeft > select {
+  margin-bottom: 10px;
+}

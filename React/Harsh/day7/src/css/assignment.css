@@ -1,0 +1,46 @@
+.form {
+  display: flex;
+  justify-content: center;
+}
+form {
+  margin: 2rem;
+  padding: 1rem;
+  font-size: large;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  width: 250px;
+  background-color: #e5e5e5;
+}
+
+input {
+  display: block;
+  margin: 10px 10px;
+  width: 200px;
+}
+
+label {
+  margin: 10px 10px;
+  /* color: aliceblue; */
+}
+
+#submit {
+  height: 40px;
+  background-color: #303030;
+  color: antiquewhite;
+  font-size: large;
+}
+.table {
+  display: flex;
+  justify-content: center;
+}
+
+table,
+td,
+th,
+tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 1rem;
+  text-align: center;
+}

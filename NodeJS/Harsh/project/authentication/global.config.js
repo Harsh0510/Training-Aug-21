@@ -1,5 +1,5 @@
 module.exports = {
-    secretKey: "Radix",
-    algorithm: "HS256",
-    expiresIn: "1d"
+  secretKey: "Radix",
+  algorithm: "HS256",
+  expiresIn: "1d",
 };
