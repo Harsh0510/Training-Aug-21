@@ -1,0 +1,145 @@
+[{
+  "_id": 3,
+  "firstName": "harsh",
+  "lastName": "patel",
+  "password": "$2b$10$LW2livccgbLMHSzH8vxMgexlVXqiEoiKysq2Ig1evwV04n/RqucJq",
+  "emailAddress": "harsh11112212@gmail.com",
+  "mobileNumber": "9167676787",
+  "roles": 1,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2022-02-15T06:06:10.438Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-15T06:06:10.438Z"
+  },
+  "__v": 0
+},{
+  "_id": 4,
+  "firstName": "sagar",
+  "lastName": "patel",
+  "password": "$2b$10$ZdYxO26W7TNaMqxHzVmqL.RnHIUGQFYg/0L2FJkmjNb03XW11eJeS",
+  "emailAddress": "sagar11112212@gmail.com",
+  "mobileNumber": "9112376787",
+  "roles": 2,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2022-02-15T06:09:32.794Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-15T06:09:32.794Z"
+  },
+  "__v": 0
+},{
+  "_id": 5,
+  "firstName": "raj",
+  "lastName": "shah",
+  "password": "$2b$10$1DEdLVD3I7XZ4m7q3bdJoO42IlIGtTjRZmpf/LX0aFIYXOhApGQku",
+  "emailAddress": "raj112@gmail.com",
+  "mobileNumber": "9123232323",
+  "roles": 2,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2022-02-15T06:10:38.907Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-15T06:10:38.907Z"
+  },
+  "__v": 0
+},{
+  "_id": 6,
+  "firstName": "manav",
+  "lastName": "patel",
+  "password": "$2b$10$alBq018V9LhASlRzM8tcj.35kZhRaDRurpl6rJ3pNjjvBebPUgGdq",
+  "emailAddress": "manav112@gmail.com",
+  "mobileNumber": "9234435665",
+  "roles": 2,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2022-02-15T06:24:01.554Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-15T06:24:01.554Z"
+  },
+  "__v": 0
+},{
+  "_id": 7,
+  "firstName": "rahul",
+  "lastName": "patel",
+  "password": "$2b$10$XC2/H20R/LQMw7J54jaote8bIE0bF1xsvWzrJQ575V/K0czrr3iXa",
+  "emailAddress": "rahul112@gmail.com",
+  "mobileNumber": "8150949907",
+  "roles": 2,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2022-02-15T06:44:28.332Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-15T06:44:28.332Z"
+  },
+  "__v": 0
+},{
+  "_id": 8,
+  "firstName": "yash",
+  "lastName": "patel",
+  "password": "$2b$10$R24OoPUYA5kUKdHqRz8xOu57lq3ibTyhyvN0QMyzVpp9A5lTsftWu",
+  "emailAddress": "yash112@gmail.com",
+  "mobileNumber": "9814094991",
+  "roles": 2,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2022-02-15T06:48:34.288Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-15T06:48:34.288Z"
+  },
+  "__v": 0
+},{
+  "_id": 9,
+  "firstName": "harsh",
+  "lastName": "patel",
+  "password": "$2b$10$5Cj5jhS3bi/Rcgc1nROJaOEJhuauTYFEYVC6xnNu1sJUTMt.saxCu",
+  "emailAddress": "harshmpatel0510@gmail.com",
+  "mobileNumber": "9624343434",
+  "roles": 2,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2022-02-19T15:53:46.332Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-19T15:53:46.332Z"
+  },
+  "__v": 0
+},{
+  "_id": 10,
+  "firstName": "riken",
+  "lastName": "patel",
+  "password": "$2b$10$p3UFMnC93yxzsfBW9o5RX.nCdTxUpuUJCVrSg7PDf.A8dubGVaOLS",
+  "emailAddress": "riken@gmail.com",
+  "mobileNumber": "9797979797",
+  "roles": 1,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2022-02-21T17:22:23.599Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-21T17:22:23.599Z"
+  },
+  "__v": 0
+},{
+  "_id": 11,
+  "firstName": "deep",
+  "lastName": "shah",
+  "password": "$2b$10$EdD53oK/GXLawKg7UNHoG.3ibhFo.iByUH2aZx2ySsHhXb3fUgp5q",
+  "emailAddress": "deep112@gmail.com",
+  "mobileNumber": "9797969594",
+  "roles": 2,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2022-02-24T08:22:05.702Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-24T08:22:05.702Z"
+  },
+  "__v": 0
+}]

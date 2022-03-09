@@ -1,0 +1,416 @@
+[{
+  "_id": 1,
+  "name": "iPhone13",
+  "subcategory": 1,
+  "__v": 0
+},{
+  "_id": 2,
+  "name": "Oneplus 9RT",
+  "subcategory": 1,
+  "__v": 0
+},{
+  "_id": 3,
+  "name": "Trending Smart Watches",
+  "subcategory": 2,
+  "__v": 0
+},{
+  "_id": 4,
+  "name": "Smart Watch Accessories",
+  "subcategory": 2,
+  "__v": 0
+},{
+  "_id": 5,
+  "name": "Apple Accessories",
+  "subcategory": 3,
+  "__v": 0
+},{
+  "_id": 6,
+  "name": "Mobile Accessories",
+  "subcategory": 3,
+  "__v": 0
+},{
+  "_id": 7,
+  "name": "Tablet Accessories",
+  "subcategory": 3,
+  "__v": 0
+},{
+  "_id": 8,
+  "name": "Docking Stations",
+  "subcategory": 3,
+  "__v": 0
+},{
+  "_id": 9,
+  "name": "Mobile Grips & Stands",
+  "subcategory": 3,
+  "__v": 0
+},{
+  "_id": 10,
+  "name": "Reconnect Disney | Marvel headphones",
+  "subcategory": 4,
+  "__v": 0
+},{
+  "_id": 11,
+  "name": "Every Day use Tablets below 15000",
+  "subcategory": 5,
+  "__v": 0
+},{
+  "_id": 13,
+  "name": "Premium Tablets, Above 15001",
+  "subcategory": 5,
+  "__v": 0
+},{
+  "_id": 14,
+  "name": "10K Mah Starting @499",
+  "subcategory": 6,
+  "__v": 0
+},{
+  "_id": 15,
+  "name": "Smart TVs",
+  "subcategory": 9,
+  "__v": 0
+},{
+  "_id": 16,
+  "name": "32 Inch TVs",
+  "subcategory": 9,
+  "__v": 0
+},{
+  "_id": 17,
+  "name": "43 Inch TVs",
+  "subcategory": 9,
+  "__v": 0
+},{
+  "_id": 18,
+  "name": "55 Inch TVs",
+  "subcategory": 9,
+  "__v": 0
+},{
+  "_id": 19,
+  "name": "Android TVs",
+  "subcategory": 9,
+  "__v": 0
+},{
+  "_id": 20,
+  "name": "4K Ultra HD TVs",
+  "subcategory": 9,
+  "__v": 0
+},{
+  "_id": 21,
+  "name": "Full HD TVs",
+  "subcategory": 9,
+  "__v": 0
+},{
+  "_id": 22,
+  "name": "HD Ready TVs",
+  "subcategory": 9,
+  "__v": 0
+},{
+  "_id": 23,
+  "name": "OLED TVs",
+  "subcategory": 9,
+  "__v": 0
+},{
+  "_id": 24,
+  "name": "Large Screen TVs",
+  "subcategory": 9,
+  "__v": 0
+},{
+  "_id": 25,
+  "name": "Gaming Consoles",
+  "subcategory": 14,
+  "__v": 0
+},{
+  "_id": 26,
+  "name": "Gaming Accessories",
+  "subcategory": 14,
+  "__v": 0
+},{
+  "_id": 27,
+  "name": "Gaming Titles",
+  "subcategory": 14,
+  "__v": 0
+},{
+  "_id": 28,
+  "name": "Gaming Clearance Sale",
+  "subcategory": 14,
+  "__v": 0
+},{
+  "_id": 29,
+  "name": "Virtual Reality Headsets",
+  "subcategory": 18,
+  "__v": 0
+},{
+  "_id": 30,
+  "name": "Stabilizers & Surge Protectors",
+  "subcategory": 18,
+  "__v": 0
+},{
+  "_id": 31,
+  "name": "Power Strips & Extension Cords",
+  "subcategory": 18,
+  "__v": 0
+},{
+  "_id": 32,
+  "name": "Musical Mini Keyboards",
+  "subcategory": 19,
+  "__v": 0
+},{
+  "_id": 33,
+  "name": "Musical Standard Keyboards",
+  "subcategory": 19,
+  "__v": 0
+},{
+  "_id": 35,
+  "name": "Split Air Conditioners",
+  "subcategory": 20,
+  "__v": 0
+},{
+  "_id": 36,
+  "name": "Window Air Conditioners",
+  "subcategory": 20,
+  "__v": 0
+},{
+  "_id": 37,
+  "name": "Smart Air Conditioners",
+  "subcategory": 20,
+  "__v": 0
+},{
+  "_id": 38,
+  "name": "Energy Efficient Air Conditioners",
+  "subcategory": 20,
+  "__v": 0
+},{
+  "_id": 39,
+  "name": "1 ton Air Conditioners",
+  "subcategory": 20,
+  "__v": 0
+},{
+  "_id": 40,
+  "name": "1.5 ton Air Conditioners",
+  "subcategory": 20,
+  "__v": 0
+},{
+  "_id": 41,
+  "name": "5 star Air Conditioners",
+  "subcategory": 20,
+  "__v": 0
+},{
+  "_id": 42,
+  "name": "Fully Automatic Front Load",
+  "subcategory": 23,
+  "__v": 0
+},{
+  "_id": 43,
+  "name": "Fully Automatic Top Load",
+  "subcategory": 23,
+  "__v": 0
+},{
+  "_id": 44,
+  "name": "Semi-Automatic Top Load",
+  "subcategory": 23,
+  "__v": 0
+},{
+  "_id": 45,
+  "name": "Washing Machine Detergents & Liquids",
+  "subcategory": 23,
+  "__v": 0
+},{
+  "_id": 46,
+  "name": "Single Door",
+  "subcategory": 24,
+  "__v": 0
+},{
+  "_id": 47,
+  "name": "Double Door",
+  "subcategory": 24,
+  "__v": 0
+},{
+  "_id": 48,
+  "name": "Side by Side Refrigerators",
+  "subcategory": 24,
+  "__v": 0
+},{
+  "_id": 49,
+  "name": "Convertible",
+  "subcategory": 24,
+  "__v": 0
+},{
+  "_id": 50,
+  "name": "Robotic Vacuum Cleaners",
+  "subcategory": 25,
+  "__v": 0
+},{
+  "_id": 51,
+  "name": "Basic use laptops",
+  "subcategory": 31,
+  "__v": 0
+},{
+  "_id": 52,
+  "name": "Student Laptops",
+  "subcategory": 31,
+  "__v": 0
+},{
+  "_id": 53,
+  "name": "Thin and light Laptops",
+  "subcategory": 31,
+  "__v": 0
+},{
+  "_id": 54,
+  "name": "Multi-Tasking Laptops",
+  "subcategory": 31,
+  "__v": 0
+},{
+  "_id": 55,
+  "name": "Gaming Laptops",
+  "subcategory": 31,
+  "__v": 0
+},{
+  "_id": 56,
+  "name": "Content creator Laptops",
+  "subcategory": 31,
+  "__v": 0
+},{
+  "_id": 57,
+  "name": "Pen Drives & OTG Drives",
+  "subcategory": 38,
+  "__v": 0
+},{
+  "_id": 58,
+  "name": "Hard Drives & SSD",
+  "subcategory": 38,
+  "__v": 0
+},{
+  "_id": 59,
+  "name": "Upto 72% Off, Only on Reliancedigital.in",
+  "subcategory": 39,
+  "__v": 0
+},{
+  "_id": 60,
+  "name": "Computer Networking Cables",
+  "subcategory": 39,
+  "__v": 0
+},{
+  "_id": 61,
+  "name": "Laptop Chargers & Adaptor",
+  "subcategory": 39,
+  "__v": 0
+},{
+  "_id": 62,
+  "name": "Laptop Bags & Sleeves",
+  "subcategory": 39,
+  "__v": 0
+},{
+  "_id": 63,
+  "name": "Laptop Cooling Pad",
+  "subcategory": 39,
+  "__v": 0
+},{
+  "_id": 64,
+  "name": "Laptop Screen Protectors",
+  "subcategory": 39,
+  "__v": 0
+},{
+  "_id": 65,
+  "name": "Keyboards",
+  "subcategory": 40,
+  "__v": 0
+},{
+  "_id": 66,
+  "name": "Computer Mouse",
+  "subcategory": 40,
+  "__v": 0
+},{
+  "_id": 67,
+  "name": "Mousepads",
+  "subcategory": 40,
+  "__v": 0
+},{
+  "_id": 68,
+  "name": "Memory Cards",
+  "subcategory": 50,
+  "__v": 0
+},{
+  "_id": 69,
+  "name": "Pen Drives",
+  "subcategory": 50,
+  "__v": 0
+},{
+  "_id": 70,
+  "name": "Camera Batteries & Chargers",
+  "subcategory": 53,
+  "__v": 0
+},{
+  "_id": 71,
+  "name": "Camera bags & cases",
+  "subcategory": 53,
+  "__v": 0
+},{
+  "_id": 72,
+  "name": "Tripods & Monopods",
+  "subcategory": 53,
+  "__v": 0
+},{
+  "_id": 73,
+  "name": "Action Camera Accessories",
+  "subcategory": 53,
+  "__v": 0
+},{
+  "_id": 74,
+  "name": "Juicers",
+  "subcategory": 59,
+  "__v": 0
+},{
+  "_id": 75,
+  "name": "Hand Mixers",
+  "subcategory": 59,
+  "__v": 0
+},{
+  "_id": 76,
+  "name": "Mixer Grinders",
+  "subcategory": 59,
+  "__v": 0
+},{
+  "_id": 77,
+  "name": "Digital Thermometers",
+  "subcategory": 79,
+  "__v": 0
+},{
+  "_id": 78,
+  "name": "Massager",
+  "subcategory": 79,
+  "__v": 0
+},{
+  "_id": 79,
+  "name": "Smart Plugs",
+  "subcategory": 81,
+  "__v": 0
+},{
+  "_id": 80,
+  "name": "Smart Cameras",
+  "subcategory": 81,
+  "__v": 0
+},{
+  "_id": 81,
+  "name": "Smart Sensors",
+  "subcategory": 81,
+  "__v": 0
+},{
+  "_id": 82,
+  "name": "Smart Lights",
+  "subcategory": 81,
+  "__v": 0
+},{
+  "_id": 83,
+  "name": "Smart Speakers",
+  "subcategory": 81,
+  "__v": 0
+},{
+  "_id": 84,
+  "name": "Test Subcategory Child",
+  "subcategory": 103,
+  "__v": 0
+},{
+  "_id": 87,
+  "name": "abcde",
+  "subcategory": 106,
+  "__v": 0
+}]

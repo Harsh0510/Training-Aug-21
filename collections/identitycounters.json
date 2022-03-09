@@ -1,0 +1,97 @@
+[{
+  "_id": {
+    "$oid": "61dbb55dc540a52fb18eddb4"
+  },
+  "model": "orderItem",
+  "field": "_id",
+  "count": 102,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61eec012a6b4284ffc53a386"
+  },
+  "model": "category",
+  "field": "_id",
+  "count": 12,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61eec2e70cec7a1e73c66c59"
+  },
+  "model": "subcategory",
+  "field": "_id",
+  "count": 106,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61eec797dcb832de424b539e"
+  },
+  "model": "subcategorychild",
+  "field": "_id",
+  "count": 87,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa7a4aa0ca0be3e18768a4"
+  },
+  "model": "brand",
+  "field": "_id",
+  "count": 15,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa7bbdbe021cd5b9d8f82e"
+  },
+  "model": "discount",
+  "field": "_id",
+  "count": 4,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61faaebc0d9b7d51bea9d57e"
+  },
+  "model": "product",
+  "field": "_id",
+  "count": 128,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6204e133c80a46d890d192a8"
+  },
+  "model": "cartItem",
+  "field": "_id",
+  "count": 218,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6209487224c2058283d57935"
+  },
+  "model": "userDetail",
+  "field": "_id",
+  "count": 11,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620c03f1532345a8a35cd9b9"
+  },
+  "model": "orderDetail",
+  "field": "_id",
+  "count": 82,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620e6894ebcefe88970ccd51"
+  },
+  "model": "address",
+  "field": "_id",
+  "count": 11,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62129f925b8233b26c511371"
+  },
+  "model": "payment",
+  "field": "_id",
+  "count": 16,
+  "__v": 0
+}]

@@ -1,0 +1,21 @@
+[{
+  "_id": 1,
+  "percentage": 30,
+  "status": true,
+  "__v": 0
+},{
+  "_id": 2,
+  "percentage": 40,
+  "status": true,
+  "__v": 0
+},{
+  "_id": 3,
+  "percentage": 50,
+  "status": true,
+  "__v": 0
+},{
+  "_id": 4,
+  "percentage": 60,
+  "status": true,
+  "__v": 0
+}]
